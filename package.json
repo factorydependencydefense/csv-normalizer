@@ -1,0 +1,25 @@
+{
+  "name": "csv-normalizer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Normalizes CSV exports into batched records.",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --platform=node --packages=external --outfile=dist/index.js",
+    "test": "node --test \"test/*.test.js\"",
+    "test:security": "node --test \"test/security/**/*.test.js\""
+  },
+  "dependencies": {
+    "csv-parse": "7.0.3",
+    "lodash": "4.17.10",
+    "moment": "2.31.0",
+    "uuid": "14.0.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
