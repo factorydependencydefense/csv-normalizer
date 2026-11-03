@@ -1,7 +1,7 @@
 import { parse } from 'csv-parse/sync';
-import camelCase from 'lodash/camelCase.js';
-import chunk from 'lodash/chunk.js';
-import mapValues from 'lodash/mapValues.js';
+import camelCase from '@factorydependencydefense/lodash-lite/camelCase.js';
+import chunk from '@factorydependencydefense/lodash-lite/chunk.js';
+import mapValues from '@factorydependencydefense/lodash-lite/mapValues.js';
 
 export function parseCsv(text) {
   return parse(text, { columns: true, skip_empty_lines: true, trim: true });
