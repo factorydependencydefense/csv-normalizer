@@ -14,8 +14,8 @@
     "test:security": "node --test \"test/security/**/*.test.js\""
   },
   "dependencies": {
+    "@factorydependencydefense/lodash-lite": "^1.0.1",
     "csv-parse": "7.0.3",
-    "lodash": "4.17.10",
     "moment": "2.31.0",
     "uuid": "14.0.3"
   },
